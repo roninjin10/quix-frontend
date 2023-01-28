@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { AssetCard } from "../../AssetCard/AssetCard";
 import { SectionTitle, Title } from "../styles";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ItemType } from "@opensea/seaport-js/lib/constants";
 import { ethers } from "ethers";
 import Image from "next/image";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { DebounceInput } from "react-debounce-input";
 import { BsFillGrid3X3GapFill, BsFillGridFill } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";

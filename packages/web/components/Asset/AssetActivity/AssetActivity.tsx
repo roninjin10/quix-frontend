@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import { FaHistory } from "react-icons/fa";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";

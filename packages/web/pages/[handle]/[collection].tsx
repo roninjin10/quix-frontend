@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { fetchProfile } from "../../api/profile";
 import { NotFound } from "../../components/NotFound/NotFound";

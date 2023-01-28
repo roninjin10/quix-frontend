@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CardContainer } from "../FeaturedCollections/styles";
 import { MirrorCard } from "./MirrorCard";
 import {

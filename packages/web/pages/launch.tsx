@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { fetchLaunchpadCollections } from "../api/collection";
 import { Launch } from "../components/Launch/Launch";

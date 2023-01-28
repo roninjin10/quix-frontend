@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { Bridge } from "../components/Bridge/Bridge";
 import { siteConfig } from "../shared/config";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa";

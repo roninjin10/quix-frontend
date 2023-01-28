@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import { siteConfig } from "../../shared/config";

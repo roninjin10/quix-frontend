@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa";

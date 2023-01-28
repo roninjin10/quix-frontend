@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { MdClose } from "react-icons/md";

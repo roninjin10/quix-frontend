@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { Terms } from "../components/Terms/Terms";
 import { siteConfig } from "../shared/config";

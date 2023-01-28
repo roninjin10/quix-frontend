@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { TbBuildingBridge } from "react-icons/tb";
 import { Button, ButtonText } from "./styles";

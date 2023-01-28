@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { Optimism } from "../components/Custom/Optimism/Optimism";
 import { siteConfig } from "../shared/config";

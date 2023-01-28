@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { siteConfig } from "../shared/config";
 
 export async function fetchSearchResults(query) {

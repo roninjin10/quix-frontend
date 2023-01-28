@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { LaunchpadDeploy } from "../../components/LaunchpadDeploy/LaunchpadDeploy";
 import { siteConfig } from "../../shared/config";

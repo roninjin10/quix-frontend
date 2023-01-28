@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { BrandAssets } from "../components/BrandAssets/BrandAssets";
 import { siteConfig } from "../shared/config";

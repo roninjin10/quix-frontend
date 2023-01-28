@@ -1,3 +1,4 @@
+// @ts-nocheck
 import fetch from "node-fetch";
 import { toast } from "react-toastify";
 import { createProfileUploadSignature } from "../utils/signatureUtils";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { FaParachuteBox } from "react-icons/fa";
 import { IoMdCart, IoMdPricetag, IoMdTrash } from "react-icons/io";
 import { IoCreate } from "react-icons/io5";

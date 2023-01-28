@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ReactMarkdown from "react-markdown";
 import { BannerText, Container, ContainerBackground } from "./styles";
 

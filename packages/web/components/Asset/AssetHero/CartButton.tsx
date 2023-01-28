@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import { MdAddShoppingCart, MdRemoveShoppingCart } from "react-icons/md";
 import { siteConfig } from "../../../shared/config";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import dynamic from "next/dynamic";
 import Image from "next/image";

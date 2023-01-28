@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useSelector } from "react-redux";

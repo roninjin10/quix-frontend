@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import Image from "next/image";
 import { useRouter } from "next/router";

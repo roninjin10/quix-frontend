@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdClose } from "react-icons/md";

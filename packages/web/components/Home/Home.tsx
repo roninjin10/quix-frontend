@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { siteConfig } from "../../shared/config";
 import { Explore } from "./Explore/Explore";
 import { FeaturedAssets } from "./FeaturedAssets/FeaturedAssets";

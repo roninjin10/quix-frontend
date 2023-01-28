@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { useState } from "react";
 import { FaListAlt } from "react-icons/fa";

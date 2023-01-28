@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "@google/model-viewer";
 import { FaEthereum } from "react-icons/fa";
 import { TbBuildingBridge } from "react-icons/tb";

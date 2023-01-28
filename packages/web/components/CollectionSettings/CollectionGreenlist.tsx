@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CSSProperties, useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { lightenDarkenColor, useCSVReader } from "react-papaparse";

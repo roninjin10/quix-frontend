@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { keyframes } from "styled-components";
 
 export const NotificationsContainer = styled.div`

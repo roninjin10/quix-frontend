@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaEthereum } from "react-icons/fa";
 import { IoLockClosed } from "react-icons/io5";

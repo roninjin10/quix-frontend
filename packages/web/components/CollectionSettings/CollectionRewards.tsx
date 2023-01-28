@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { fetchCollectionWithRefreshedCampaign } from "../../api/collection";

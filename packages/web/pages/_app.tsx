@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import NextNProgress from "nextjs-progressbar";

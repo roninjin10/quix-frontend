@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { CollectionImage } from "../../Common/Images/CollectionImage";
 import { Card } from "./styles";

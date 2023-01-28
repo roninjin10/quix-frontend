@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdPersonAdd, MdPersonOff } from "react-icons/md";

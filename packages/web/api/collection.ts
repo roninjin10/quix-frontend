@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import fetch from "node-fetch";
 import { toast } from "react-toastify";

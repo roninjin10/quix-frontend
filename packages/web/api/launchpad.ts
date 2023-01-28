@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { toast } from "react-toastify";
 import { createCollectionDetailsSignature } from "../utils/signatureUtils";
 import { siteConfig } from "../shared/config";

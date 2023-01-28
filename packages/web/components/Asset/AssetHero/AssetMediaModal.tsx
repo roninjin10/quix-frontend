@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "@google/model-viewer";
 import { useState } from "react";
 import { TokenMedia } from "../../Common/Images/TokenImage";

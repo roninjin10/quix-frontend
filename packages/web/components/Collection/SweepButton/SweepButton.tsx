@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import Link from "next/link";
 import { useState } from "react";

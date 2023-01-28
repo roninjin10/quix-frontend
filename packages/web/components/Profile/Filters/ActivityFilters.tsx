@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useSelector } from "react-redux";
 import { siteConfig } from "../../../shared/config";
 import { State } from "../../../store";

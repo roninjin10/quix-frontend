@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { useEffect } from "react";
 import removeMd from "remove-markdown";

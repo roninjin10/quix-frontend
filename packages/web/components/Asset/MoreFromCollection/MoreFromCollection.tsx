@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { IoGrid } from "react-icons/io5";

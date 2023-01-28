@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";

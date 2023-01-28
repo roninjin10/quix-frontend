@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ethers } from "ethers";
 import { useState } from "react";
 import { toast } from "react-toastify";

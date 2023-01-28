@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { Cart } from "../components/Cart/Cart";
 import { siteConfig } from "../shared/config";

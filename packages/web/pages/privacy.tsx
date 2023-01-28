@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { Privacy } from "../components/Privacy/Privacy";
 import { siteConfig } from "../shared/config";

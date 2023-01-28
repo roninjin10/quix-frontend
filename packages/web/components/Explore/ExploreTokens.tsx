@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MdClose } from "react-icons/md";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useSelector } from "react-redux";

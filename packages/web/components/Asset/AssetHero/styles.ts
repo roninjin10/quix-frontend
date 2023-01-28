@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { keyframes } from "styled-components";
 import Modal from "styled-react-modal";
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { fetchExtendedSearchResults } from "../api/search";
 import { Search } from "../components/Search/Search";

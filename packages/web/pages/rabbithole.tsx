@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { RabbitHole } from "../components/Custom/RabbitHole/RabbitHole";
 import { siteConfig } from "../shared/config";

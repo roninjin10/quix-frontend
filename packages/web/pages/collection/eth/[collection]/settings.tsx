@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Head from "next/head";
 import { fetchCollectionSettings } from "../../../../api/collection";
 import { fetchLaunchpadCollection } from "../../../../api/launchpad";

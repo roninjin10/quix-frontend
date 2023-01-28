@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from "next/image";
 import { MdClose } from "react-icons/md";
 import InfiniteScroll from "react-infinite-scroll-component";

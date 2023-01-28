@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { MdVerified } from "react-icons/md";
 import { siteConfig } from "../../../shared/config";

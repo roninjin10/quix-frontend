@@ -1,3 +1,4 @@
+// @ts-nocheck
 import router from "next/router";
 import { toast } from "react-toastify";
 import { fetchMoreByURL } from "../../../api/general";

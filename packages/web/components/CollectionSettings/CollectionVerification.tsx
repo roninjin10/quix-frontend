@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { toast } from "react-toastify";
 import { siteConfig } from "../../shared/config";

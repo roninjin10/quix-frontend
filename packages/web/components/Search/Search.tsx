@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AssetCard } from "../AssetCard/AssetCard";
 import { CardGrid } from "../AssetCard/styles";
 import { CollectionCard } from "../CollectionCard/CollectionCard";

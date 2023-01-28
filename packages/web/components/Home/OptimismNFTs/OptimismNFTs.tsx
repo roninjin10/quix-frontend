@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from "next/link";
 import { MdOutlineArrowForward } from "react-icons/md";
 import { CollectionCardLarge } from "../../CollectionCard/CollectionCardLarge";

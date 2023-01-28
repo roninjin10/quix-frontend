@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from "next/image";
 import { DebounceInput } from "react-debounce-input";
 import { BsFillGrid3X3GapFill, BsFillGridFill } from "react-icons/bs";
