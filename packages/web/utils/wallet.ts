@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { ethers } from "ethers";

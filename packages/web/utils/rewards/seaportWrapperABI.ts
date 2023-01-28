@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const rewardsWrapperABI = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
   {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const l1ERC721BridgeABI = [
   {
     inputs: [

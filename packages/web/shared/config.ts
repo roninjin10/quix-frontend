@@ -1,5 +1,5 @@
 export const siteConfig =
-  process.env.NEXT_PUBLIC_NETWORK == "opt-mainnet"
+  process.env["NEXT_PUBLIC_NETWORK"] == "opt-mainnet"
     ? {
         CHAIN_NAME: "Optimism",
         CHAIN_ID: "0xa",
@@ -18,7 +18,7 @@ export const siteConfig =
         BACKEND_URL: "",
         BACKEND_TOKEN: "",
       }
-    : process.env.NEXT_PUBLIC_NETWORK == "opt-goerli"
+    : process.env["NEXT_PUBLIC_NETWORK"] == "opt-goerli"
     ? {
         CHAIN_NAME: "Optimism Goerli",
         CHAIN_ID: "0x1a4",
