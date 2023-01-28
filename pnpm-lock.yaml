@@ -48,6 +48,7 @@ importers:
       react-toastify: ^9.1.1
       react-tooltip: ^5.7.1
       react-visibility-sensor: ^5.1.1
+      redux: ^4.2.0
       redux-devtools-extension: ^2.13.9
       remove-markdown: ^0.5.0
       slick-carousel: ^1.8.1
@@ -83,12 +84,13 @@ importers:
       react-palette: 1.0.2_biqbaboplfbrettd7655fr4n2y
       react-papaparse: 4.1.0
       react-player: 2.11.0_react@18.2.0
-      react-redux: 8.0.5_5ndqzdd6t4rivxsukjv3i3ak2q
+      react-redux: 8.0.5_kufecmwnbxuzgclmdapv3oizgm
       react-timeago: 7.1.0_react@18.2.0
       react-toastify: 9.1.1_biqbaboplfbrettd7655fr4n2y
       react-tooltip: 5.7.1_biqbaboplfbrettd7655fr4n2y
       react-visibility-sensor: 5.1.1_biqbaboplfbrettd7655fr4n2y
-      redux-devtools-extension: 2.13.9
+      redux: 4.2.0
+      redux-devtools-extension: 2.13.9_redux@4.2.0
       remove-markdown: 0.5.0
       slick-carousel: 1.8.1
       styled-components: 5.3.6_biqbaboplfbrettd7655fr4n2y
@@ -6545,7 +6547,7 @@ packages:
     dependencies:
       next: 13.1.6_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
-      react-redux: 8.0.5_5ndqzdd6t4rivxsukjv3i3ak2q
+      react-redux: 8.0.5_kufecmwnbxuzgclmdapv3oizgm
     dev: false
 
   /next-tick/1.1.0:
@@ -7422,7 +7424,7 @@ packages:
       react-fast-compare: 3.2.0
     dev: false
 
-  /react-redux/8.0.5_5ndqzdd6t4rivxsukjv3i3ak2q:
+  /react-redux/8.0.5_kufecmwnbxuzgclmdapv3oizgm:
     resolution: {integrity: sha512-Q2f6fCKxPFpkXt1qNRZdEDLlScsDWyrgSj0mliK59qU6W5gvBiKkdMEG2lJzhd1rCctf0hb6EtePPLZ2e0m1uw==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -7451,6 +7453,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
+      redux: 4.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
@@ -7540,11 +7543,19 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /redux-devtools-extension/2.13.9:
+  /redux-devtools-extension/2.13.9_redux@4.2.0:
     resolution: {integrity: sha512-cNJ8Q/EtjhQaZ71c8I9+BPySIBVEKssbPpskBfsXqb8HJ002A3KRVHfeRzwRo6mGPqsm7XuHTqNSNeS1Khig0A==}
     deprecated: Package moved to @redux-devtools/extension.
     peerDependencies:
       redux: ^3.1.0 || ^4.0.0
+    dependencies:
+      redux: 4.2.0
+    dev: false
+
+  /redux/4.2.0:
+    resolution: {integrity: sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==}
+    dependencies:
+      '@babel/runtime': 7.20.13
     dev: false
 
   /regenerator-runtime/0.13.11:
