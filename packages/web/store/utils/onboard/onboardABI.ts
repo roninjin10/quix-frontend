@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const onboardABI = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
   {

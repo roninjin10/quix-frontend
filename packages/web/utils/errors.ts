@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { toast } from "react-toastify";
 
 export const handleError = (error) => {

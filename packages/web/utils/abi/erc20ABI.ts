@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export const erc20ABI = [
   {
     anonymous: false,

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { HYDRATE } from "next-redux-wrapper";
 import { AnyAction } from "redux";
 

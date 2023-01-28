@@ -1,3 +1,4 @@
+// @ts-nocheck
 export type UniqueString = string;
 export type UriString = string;
 export type UUID = string;

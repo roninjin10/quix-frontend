@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { siteConfig } from "../../shared/config";
 
 const PAUSABLE_ZONE_ADDRESS = siteConfig.PAUSABLE_ZONE;

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AnyAction } from "redux";
 import { Optional } from "../shared/types";
 

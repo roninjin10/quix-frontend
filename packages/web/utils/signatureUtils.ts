@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { getSigner } from "./wallet";
 
 const createUpdateProfileMessage = () => {

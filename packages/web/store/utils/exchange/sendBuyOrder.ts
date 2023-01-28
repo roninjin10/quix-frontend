@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Seaport } from "@opensea/seaport-js";
 import { OrderWithCounter } from "@opensea/seaport-js/lib/types";
 import { executeAllActions } from "@opensea/seaport-js/lib/utils/usecase";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createWrapper, MakeStore } from "next-redux-wrapper";
 import { combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";

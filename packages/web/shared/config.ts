@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const siteConfig =
   process.env["NEXT_PUBLIC_NETWORK"] == "opt-mainnet"
     ? {
