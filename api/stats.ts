@@ -3,7 +3,8 @@ import { siteConfig } from "../shared/config";
 
 let statsController = null;
 export async function fetchMarketplaceStats(sort, range, first = null) {
-  const url = `${siteConfig.BACKEND_URL}/api/collection/stats/?&sort=${sort}&range=${range}`;
+  /*
+  const url = "http://localhost:7300"; // `${siteConfig.BACKEND_URL}/api/collection/stats/?&sort=${sort}&range=${range}`;
 
   if (first) {
     const res = await fetch(url, {
@@ -45,4 +46,6 @@ export async function fetchMarketplaceStats(sort, range, first = null) {
       return null;
     }
   }
+  */
+  return null;
 }

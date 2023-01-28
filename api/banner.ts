@@ -1,6 +1,7 @@
 import { siteConfig } from "../shared/config";
 
 export async function fetchSiteBanner() {
+  /*
   const url = `${siteConfig.BACKEND_URL}/api/banner/`;
 
   const res = await fetch(url, {
@@ -17,4 +18,6 @@ export async function fetchSiteBanner() {
   } else {
     return null;
   }
+  */
+  return null;
 }

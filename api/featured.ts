@@ -1,6 +1,7 @@
 import { siteConfig } from "../shared/config";
 
 export async function fetchFeaturedItems() {
+  /*
   const url = `${siteConfig.BACKEND_URL}/api/featured/`;
 
   const res = await fetch(url, {
@@ -17,4 +18,6 @@ export async function fetchFeaturedItems() {
   } else {
     return null;
   }
+  */
+  return null;
 }
