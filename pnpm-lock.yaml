@@ -31,7 +31,6 @@ importers:
       next: 13.1.6
       next-redux-wrapper: ^8.1.0
       nextjs-progressbar: ^0.0.16
-      node-fetch: ^2.6.8
       react: 18.2.0
       react-chartjs-2: ^5.2.0
       react-countup: ^6.4.1
@@ -72,7 +71,6 @@ importers:
       next: 13.1.6_biqbaboplfbrettd7655fr4n2y
       next-redux-wrapper: 8.1.0_4rc3fhkizgzmqy7p7vghukrrdq
       nextjs-progressbar: 0.0.16_next@13.1.6+react@18.2.0
-      node-fetch: 2.6.8
       react: 18.2.0
       react-chartjs-2: 5.2.0_uxqdnqzacoapcp4mwytn5yclyu
       react-countup: 6.4.1_react@18.2.0
