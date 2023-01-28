@@ -1,5 +1,5 @@
 {
-  "name": "quixotic-frontend",
+  "name": "@opnft/web",
   "private": true,
   "scripts": {
     "dev": "next dev",
