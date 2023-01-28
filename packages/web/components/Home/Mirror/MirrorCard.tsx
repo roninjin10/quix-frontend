@@ -6,6 +6,7 @@ import { Card } from "./styles";
 export const MirrorCard = ({ collection }) => {
   return (
     <Link
+      legacyBehavior
       href={`/collection/${
         collection.slug ? collection.slug : collection.address
       }`}

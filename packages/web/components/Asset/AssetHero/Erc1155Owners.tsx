@@ -144,6 +144,7 @@ export const Erc1155Owners = ({ token, quantityOwned }) => {
                 <OwnerGrid id="scrollableDiv">
                   {tokenOwnersState.results.map((owner, index) => (
                     <Link
+                      legacyBehavior
                       href={`/${
                         owner.owner.username ||
                         owner.owner.reverse_ens ||

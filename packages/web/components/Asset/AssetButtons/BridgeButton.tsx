@@ -7,6 +7,7 @@ export const BridgeButton = ({ token }) => {
   return (
     <div>
       <Link
+        legacyBehavior
         href={`/bridge?address=${token.contract_address}&token_id=${
           token.token_id
         }${token.bridged ? "&network=optimism" : ""}`}

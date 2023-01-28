@@ -14,7 +14,7 @@ export const NotFound = () => {
       <ContainerExtended>
         <Title>404 Not Found</Title>
         <Subtitle>We couldn&apos;t find the page you were looking for</Subtitle>
-        <Link href="/">
+        <Link legacyBehavior href="/">
           <a>
             <NoItemsButton>Back to home</NoItemsButton>
           </a>

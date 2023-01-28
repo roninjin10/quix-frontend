@@ -298,7 +298,10 @@ export const DepositModal = ({ l1Address, l2Address, tokenId }) => {
                   )}
                   {step == 2 && tokenId && (
                     <>
-                      <Link href={`/asset/${l2Address}/${tokenId}`}>
+                      <Link
+                        legacyBehavior
+                        href={`/asset/${l2Address}/${tokenId}`}
+                      >
                         <a>
                           <Button>View NFT</Button>
                         </a>

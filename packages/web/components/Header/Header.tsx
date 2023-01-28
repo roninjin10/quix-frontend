@@ -116,7 +116,7 @@ export const Header = ({ theme, toggleTheme }) => {
           )}
           <ContainerExtended>
             <Nav>
-              <Link href="/" passHref>
+              <Link legacyBehavior href="/" passHref>
                 <a>
                   <Logo className={siteConfig.LOGO_BADGE ? "badge" : null}>
                     {theme == "light" ? (
@@ -151,21 +151,21 @@ export const Header = ({ theme, toggleTheme }) => {
                 <NavElement
                   className={currentPage == "explore" ? "active" : null}
                 >
-                  <Link href="/explore">
+                  <Link legacyBehavior href="/explore">
                     <a>Explore</a>
                   </Link>
                 </NavElement>
                 <NavElement
                   className={currentPage == "stats" ? "active" : null}
                 >
-                  <Link href="/stats">
+                  <Link legacyBehavior href="/stats">
                     <a>Stats</a>
                   </Link>
                 </NavElement>
                 <NavElement
                   className={currentPage == "bridge" ? "active" : null}
                 >
-                  <Link href="/bridge">
+                  <Link legacyBehavior href="/bridge">
                     <a>Bridge</a>
                   </Link>
                 </NavElement>
@@ -176,13 +176,13 @@ export const Header = ({ theme, toggleTheme }) => {
                       : "launchpad"
                   }
                 >
-                  <Link href="/launch">
+                  <Link legacyBehavior href="/launch">
                     <a>Launch</a>
                   </Link>
                 </NavElement>
 
                 <NavElement className="cart">
-                  <Link href="/cart">
+                  <Link legacyBehavior href="/cart">
                     <a>
                       <NavIcon>
                         <MdShoppingCart />
@@ -223,7 +223,7 @@ export const Header = ({ theme, toggleTheme }) => {
                 </NavElement>
 
                 <NavElement className="cart">
-                  <Link href="/cart">
+                  <Link legacyBehavior href="/cart">
                     <a>
                       <NavIcon>
                         <MdShoppingCart />

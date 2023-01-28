@@ -52,7 +52,7 @@ export const Trending = ({ top_collections }) => {
     <ContainerBackground>
       <ContainerExtended>
         <SectionTitle>
-          <Link href="/stats">
+          <Link legacyBehavior href="/stats">
             <a>
               <Title>Top Collections</Title>
             </a>
@@ -113,7 +113,7 @@ export const Trending = ({ top_collections }) => {
         </TrendingGrid>
 
         <ButtonContainer>
-          <Link href="/stats">
+          <Link legacyBehavior href="/stats">
             <a>
               <ViewAllButton>View Stats</ViewAllButton>
             </a>
@@ -127,6 +127,7 @@ export const Trending = ({ top_collections }) => {
 export const TrendingCollectionCard = ({ rank, collection }) => {
   return (
     <Link
+      legacyBehavior
       href={`/collection/${
         collection.slug ? collection.slug : collection.address
       }`}

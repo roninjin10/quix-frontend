@@ -14,7 +14,7 @@ import { RiArrowRightDownLine, RiHeartFill, RiHeartLine } from "react-icons/ri";
 import { TbBuildingBridge } from "react-icons/tb";
 import { useDispatch, useSelector } from "react-redux";
 import TimeAgo from "react-timeago";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { likeToken, unlikeToken } from "../../api/token";
 import { siteConfig } from "../../shared/config";
 import { State } from "../../store";
@@ -161,6 +161,7 @@ export const AssetCard = ({
   return (
     <Card>
       <Link
+        legacyBehavior
         href={`/asset/${token.network != siteConfig.NETWORK ? "eth/" : ""}${
           token.contract_address
         }/${token.token_id}`}
@@ -235,6 +236,7 @@ export const AssetCard = ({
                 {showCollection && (
                   <CollectionName>
                     <Link
+                      legacyBehavior
                       href={`/collection/${
                         token.collection.slug
                           ? token.collection.slug

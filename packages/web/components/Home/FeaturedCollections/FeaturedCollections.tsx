@@ -15,12 +15,12 @@ export const FeaturedCollections = ({ collections }) => {
     <ContainerBackground>
       <ContainerExtended>
         <SectionTitle>
-          <Link href="/explore">
+          <Link legacyBehavior href="/explore">
             <a>
               <Title>Featured Projects</Title>
             </a>
           </Link>
-          <Link href="/explore">
+          <Link legacyBehavior href="/explore">
             <a>
               <Subtitle>
                 View All <MdOutlineArrowForward />

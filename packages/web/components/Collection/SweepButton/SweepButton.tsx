@@ -183,7 +183,10 @@ export const SweepButton = ({ collectionAddress, tokensState }) => {
                 </TextInputContainer>
               </ModalGridRow>
 
-              <Link href={`/cart?collection=${collectionAddress}`}>
+              <Link
+                legacyBehavior
+                href={`/cart?collection=${collectionAddress}`}
+              >
                 <a>
                   <Button>Proceed to Checkout</Button>
                 </a>

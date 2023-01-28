@@ -343,6 +343,7 @@ const StatCollectionRow = ({ collection, index }) => {
   return (
     <>
       <Link
+        legacyBehavior
         href={
           collection.slug
             ? `/collection/${collection.slug}`
@@ -484,23 +485,25 @@ const StatCollectionRow = ({ collection, index }) => {
                     )}
                   </StatText>
                   <PriceSmall>
-                    {showUSD && !!collection.eth_to_usd && !!collection.floor && (
-                      <>
-                        {Number(
-                          ethers.utils.formatEther(
-                            ethers.utils.parseUnits(
-                              (
-                                collection.floor * collection.eth_to_usd
-                              ).toString(),
-                              "gwei"
+                    {showUSD &&
+                      !!collection.eth_to_usd &&
+                      !!collection.floor && (
+                        <>
+                          {Number(
+                            ethers.utils.formatEther(
+                              ethers.utils.parseUnits(
+                                (
+                                  collection.floor * collection.eth_to_usd
+                                ).toString(),
+                                "gwei"
+                              )
                             )
-                          )
-                        ).toLocaleString("en-US", {
-                          style: "currency",
-                          currency: "USD",
-                        })}
-                      </>
-                    )}
+                          ).toLocaleString("en-US", {
+                            style: "currency",
+                            currency: "USD",
+                          })}
+                        </>
+                      )}
                   </PriceSmall>
                 </StatTextContainer>
               </StatRowSection>

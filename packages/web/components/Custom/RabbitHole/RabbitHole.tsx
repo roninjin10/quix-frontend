@@ -197,7 +197,7 @@ export const RabbitHole = () => {
                 </MintButton>
               )}
 
-              <Link href="/collection/rabbithole">
+              <Link legacyBehavior href="/collection/rabbithole">
                 <a>
                   <MintButton className="secondary">View Collection</MintButton>
                 </a>
@@ -316,13 +316,13 @@ export const RabbitHole = () => {
                 <ButtonGrid className="offer">
                   {step == 1 && <Button className="muted">View NFT</Button>}
                   {step == 2 && (
-                    <Link href={`/collection/rabbithole`}>
+                    <Link legacyBehavior href={`/collection/rabbithole`}>
                       <a>
                         <Button>View NFT</Button>
                       </a>
                     </Link>
                   )}
-                  <Link href="/explore">
+                  <Link legacyBehavior href="/explore">
                     <a>
                       <Button className="outline">Explore Collections</Button>
                     </a>

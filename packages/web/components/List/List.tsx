@@ -165,6 +165,7 @@ const TokenRow = ({ listed_token }) => {
   return (
     <BuyOrdersRow>
       <Link
+        legacyBehavior
         href={`/asset/${token.network != siteConfig.NETWORK ? "eth/" : ""}${
           token.contract_address
         }/${token.token_id}`}
@@ -177,6 +178,7 @@ const TokenRow = ({ listed_token }) => {
             </TokenImageContainer>
             <ActivityText>
               <Link
+                legacyBehavior
                 href={
                   token.collection.slug
                     ? `/collection/${token.collection.slug}`

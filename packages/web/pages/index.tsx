@@ -1,4 +1,5 @@
 // @ts-nocheck
+"use client";
 import Head from "next/head";
 import { useEffect } from "react";
 import { fetchFeaturedItems } from "../api/featured";

@@ -223,7 +223,7 @@ export const Optimism = () => {
                 </MintButton>
               )}
 
-              <Link href="/explore">
+              <Link legacyBehavior href="/explore">
                 <a>
                   <MintButton className="secondary">
                     Explore Collections
@@ -348,13 +348,16 @@ export const Optimism = () => {
                 <ButtonGrid className="offer">
                   {step == 1 && <Button className="muted">View NFT</Button>}
                   {step == 2 && (
-                    <Link href={`/collection/optimistic-explorer`}>
+                    <Link
+                      legacyBehavior
+                      href={`/collection/optimistic-explorer`}
+                    >
                       <a>
                         <Button>View NFT</Button>
                       </a>
                     </Link>
                   )}
-                  <Link href="/explore">
+                  <Link legacyBehavior href="/explore">
                     <a>
                       <Button className="outline">Explore Collections</Button>
                     </a>

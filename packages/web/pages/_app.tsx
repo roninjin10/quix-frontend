@@ -1,4 +1,4 @@
-// @ts-nocheck
+"use client";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import NextNProgress from "nextjs-progressbar";
@@ -10,7 +10,6 @@ import { ThemeProvider } from "styled-components";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Maintenance } from "../components/Maintenance/Maintenance";
-import { siteConfig } from "../shared/config";
 import { darkTheme, GlobalStyle, lightTheme } from "../shared/theme";
 import { State, wrapper } from "../store";
 import { initMixpanel, setMixpanelProfile } from "../utils/mixpanel";
@@ -18,7 +17,7 @@ import {
   connectCoinbaseWallet,
   connectMetaMaskIfActive,
   connectWalletConnect,
-  getAddress,
+  useGetAddress,
   getWallet,
 } from "../utils/wallet";
 
@@ -27,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   // Dark mode
   const [theme, setTheme] = useState("light");
-  const setMode = (mode) => {
+  const setMode = (mode: any) => {
     window.localStorage.setItem("theme", mode);
     setTheme(mode);
   };
@@ -40,11 +39,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
-  let address, wallet;
-  if (typeof window !== "undefined") {
-    address = getAddress();
-    wallet = getWallet();
-  }
+  let address = useGetAddress();
+  let wallet = typeof window !== "undefined" && getWallet();
 
   useEffect(() => {
     if (!!address) {
@@ -65,6 +61,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const banner = useSelector((state: State) => state.banner);
 
+  const _Component: any = Component;
+
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
@@ -79,7 +77,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
 
-      {process.env.NEXT_PUBLIC_MAINTENANCE_MODE == "true" ? (
+      {process.env["NEXT_PUBLIC_MAINTENANCE_MODE"] == "true" ? (
         <Maintenance />
       ) : (
         <>
@@ -101,7 +99,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
           <Header theme={theme} toggleTheme={toggleTheme} />
           <main className={banner ? "main banner" : "main"}>
-            <Component {...pageProps} />
+            <_Component {...pageProps} />
           </main>
           <Footer />
         </>

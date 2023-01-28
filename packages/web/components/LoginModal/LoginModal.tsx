@@ -144,13 +144,13 @@ export const LoginModal = () => {
             <SmallText>
               By connecting your wallet, you agree to our{" "}
               <span onClick={toggleModal}>
-                <Link href="/terms">
+                <Link legacyBehavior href="/terms">
                   <a>terms of use</a>
                 </Link>
               </span>{" "}
               and{" "}
               <span onClick={toggleModal}>
-                <Link href="/privacy">
+                <Link legacyBehavior href="/privacy">
                   <a>privacy policy</a>
                 </Link>
               </span>

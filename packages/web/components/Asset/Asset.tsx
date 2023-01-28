@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { ModalProvider } from "styled-react-modal";
 import {
   fetchErc1155TokenOwnedQuantity,

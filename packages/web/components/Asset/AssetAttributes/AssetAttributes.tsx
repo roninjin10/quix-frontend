@@ -36,6 +36,7 @@ export const AssetAttributes = ({ token }) => {
             <AttributesGrid>
               {token.attributes.map((attribute, index) => (
                 <Link
+                  legacyBehavior
                   href={
                     token.collection.slug
                       ? `/collection/${

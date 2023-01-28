@@ -182,7 +182,7 @@ export const CollectionMint = ({ collection, hostedCollection }) => {
       </EditorRow>
 
       <EditorRow>
-        <Link href={`/launch/${collection.address}`}>
+        <Link legacyBehavior href={`/launch/${collection.address}`}>
           <a>
             <GenerateButton className="">View Mint Page</GenerateButton>
           </a>

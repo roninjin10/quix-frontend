@@ -501,7 +501,7 @@ export const Profile = ({ profile, tab }) => {
             {current_user &&
               current_user.address == profile.address &&
               !profile.profile_image && (
-                <Link href="/settings" passHref>
+                <Link legacyBehavior href="/settings" passHref>
                   <a>
                     <ProfileImageEditIcon>
                       <BsPlus />
@@ -667,7 +667,7 @@ export const Profile = ({ profile, tab }) => {
           </MenuItem>
           {current_user && current_user.address == profile.address && (
             <MenuItem className="edit">
-              <Link href="/settings" passHref>
+              <Link legacyBehavior href="/settings" passHref>
                 <a>
                   <ProfileEditButton>
                     <MenuIcon>

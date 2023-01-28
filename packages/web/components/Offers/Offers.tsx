@@ -171,6 +171,7 @@ const OfferRow = ({ buy_order, received = false }) => {
   return (
     <BuyOrdersRow>
       <Link
+        legacyBehavior
         href={`/asset/${token.network != siteConfig.NETWORK ? "eth/" : ""}${
           token.contract_address
         }/${token.token_id}`}
@@ -183,6 +184,7 @@ const OfferRow = ({ buy_order, received = false }) => {
             </TokenImageContainer>
             <ActivityText>
               <Link
+                legacyBehavior
                 href={
                   token.collection.slug
                     ? `/collection/${token.collection.slug}`
@@ -242,14 +244,14 @@ const OfferRow = ({ buy_order, received = false }) => {
       </BuyOrdersText>
       {received ? (
         <BuyOrdersText>
-          <Link href={"/" + from_profile}>
+          <Link legacyBehavior href={"/" + from_profile}>
             <a>{from_short}</a>
           </Link>
         </BuyOrdersText>
       ) : (
         <BuyOrdersText>
           {token.owner ? (
-            <Link href={"/" + owner_profile}>
+            <Link legacyBehavior href={"/" + owner_profile}>
               <a>{owner_short}</a>
             </Link>
           ) : (

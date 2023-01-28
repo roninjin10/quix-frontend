@@ -9,7 +9,7 @@ export const FeaturedAssets = ({ tokens }) => {
     <ContainerBackground>
       <ContainerExtended>
         <SectionTitle>
-          <Link href="/explore?tab=1">
+          <Link legacyBehavior href="/explore?tab=1">
             <a>
               <Title>Trending NFTs</Title>
             </a>

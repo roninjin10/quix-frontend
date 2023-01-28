@@ -8,7 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { MdInfo } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { ModalProvider } from "styled-react-modal";
 import Web3 from "web3";
 import {

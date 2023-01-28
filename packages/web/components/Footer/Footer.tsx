@@ -23,7 +23,7 @@ export const Footer = () => {
           <FooterRow>
             <FooterSectionGrid className="vertical">
               <Logo>
-                <Link href="/" passHref>
+                <Link legacyBehavior href="/" passHref>
                   <a>Quix</a>
                 </Link>
               </Logo>
@@ -81,14 +81,14 @@ export const Footer = () => {
               >
                 API
               </a>
-              <Link href="/brand-assets">
+              <Link legacyBehavior href="/brand-assets">
                 <a>Brand</a>
               </Link>
 
-              <Link href="/terms">
+              <Link legacyBehavior href="/terms">
                 <a>Terms</a>
               </Link>
-              <Link href="/privacy">
+              <Link legacyBehavior href="/privacy">
                 <a>Privacy</a>
               </Link>
             </FooterSectionGrid>

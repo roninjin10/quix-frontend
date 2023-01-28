@@ -142,6 +142,7 @@ const NotificationRow = ({ notification, address }) => {
 
   return (
     <Link
+      legacyBehavior
       href={`/asset/${
         notification.token.network != siteConfig.NETWORK ? "eth/" : ""
       }${notification.token.contract_address}/${notification.token.token_id}`}

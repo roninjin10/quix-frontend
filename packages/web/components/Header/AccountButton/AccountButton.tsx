@@ -75,7 +75,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
     <div onMouseLeave={() => setDisplayDropdown(address && false)}>
       <WebButton onMouseOver={() => setDisplayDropdown(address && true)}>
         {address ? (
-          <Link href="/profile">
+          <Link legacyBehavior href="/profile">
             <AccountDropdownButton>
               {profile && <ProfileImage profile={profile} />}
             </AccountDropdownButton>
@@ -112,7 +112,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
       <DropdownContainer className={displayDropdown ? "visible" : null}>
         <DropdownGrid>
           <MobileNav>
-            <Link href="/explore" passHref>
+            <Link legacyBehavior href="/explore" passHref>
               <a onClick={() => setDisplayDropdown(false)}>
                 <DropdownRow className="link">
                   <RowContent className="link">
@@ -125,7 +125,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
               </a>
             </Link>
 
-            <Link href="/stats" passHref>
+            <Link legacyBehavior href="/stats" passHref>
               <a onClick={() => setDisplayDropdown(false)}>
                 <DropdownRow className="link">
                   <RowContent className="link">
@@ -138,7 +138,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
               </a>
             </Link>
 
-            <Link href="/bridge" passHref>
+            <Link legacyBehavior href="/bridge" passHref>
               <a onClick={() => setDisplayDropdown(false)}>
                 <DropdownRow className="link">
                   <RowContent className="link">
@@ -151,7 +151,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
               </a>
             </Link>
 
-            <Link href="/launch" passHref>
+            <Link legacyBehavior href="/launch" passHref>
               <a onClick={() => setDisplayDropdown(false)}>
                 <DropdownRow className="link">
                   <RowContent className="link">
@@ -167,7 +167,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
 
           {address && (
             <>
-              <Link href="/profile" passHref>
+              <Link legacyBehavior href="/profile" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link mobile-border">
                     <RowContent>
@@ -179,7 +179,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
                   </DropdownRow>
                 </a>
               </Link>
-              <Link href="/profile?tab=1" passHref>
+              <Link legacyBehavior href="/profile?tab=1" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link">
                     <RowContent>
@@ -191,7 +191,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
                   </DropdownRow>
                 </a>
               </Link>
-              <Link href="/collections" passHref>
+              <Link legacyBehavior href="/collections" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link">
                     <RowContent>
@@ -203,7 +203,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
                   </DropdownRow>
                 </a>
               </Link>
-              <Link href="/listings" passHref>
+              <Link legacyBehavior href="/listings" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link">
                     <RowContent>
@@ -215,7 +215,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
                   </DropdownRow>
                 </a>
               </Link>
-              <Link href="/offers" passHref>
+              <Link legacyBehavior href="/offers" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link">
                     <RowContent>
@@ -227,7 +227,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
                   </DropdownRow>
                 </a>
               </Link>
-              <Link href="/settings" passHref>
+              <Link legacyBehavior href="/settings" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <DropdownRow className="link">
                     <RowContent>
@@ -299,7 +299,7 @@ export const AccountButton = ({ theme, toggleTheme, toggleShowUSD }) => {
 
           {address && (
             <>
-              <Link href="/profile" passHref>
+              <Link legacyBehavior href="/profile" passHref>
                 <a onClick={() => setDisplayDropdown(false)}>
                   <WalletInfo>
                     <RowContent>

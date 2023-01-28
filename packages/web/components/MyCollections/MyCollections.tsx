@@ -48,7 +48,7 @@ export const MyCollections = ({ collections, setCollections }) => {
               <p>
                 Get started by creating your first NFT collection on Optimism
               </p>
-              <Link href="/launch">
+              <Link legacyBehavior href="/launch">
                 <a>
                   <NoItemsButton>Get Started</NoItemsButton>
                 </a>

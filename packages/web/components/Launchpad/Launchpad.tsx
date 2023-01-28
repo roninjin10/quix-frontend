@@ -317,6 +317,7 @@ export const Launchpad = ({ collection, hostedCollection }) => {
                 />
 
                 <Link
+                  legacyBehavior
                   href={
                     collection.slug
                       ? `/collection/${collection.slug}`
@@ -592,11 +593,10 @@ export const Launchpad = ({ collection, hostedCollection }) => {
                   {step == 2 && <Button className="muted">View NFTs</Button>}
                   {step == 3 && (
                     <Link
+                      legacyBehavior
                       href={`/profile?collections=collection%3D${collection.address}`}
                     >
-                      <a>
-                        <Button>View NFTs</Button>
-                      </a>
+                      <Button>View NFTs</Button>
                     </Link>
                   )}
                   <a

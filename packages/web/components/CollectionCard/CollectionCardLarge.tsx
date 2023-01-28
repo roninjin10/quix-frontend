@@ -7,7 +7,7 @@ import { FaEthereum } from "react-icons/fa";
 import { MdChevronLeft, MdVerified } from "react-icons/md";
 import ReactMarkdown from "react-markdown";
 import { usePalette } from "react-palette";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { siteConfig } from "../../shared/config";
 import { CollectionImage } from "../Common/Images/CollectionImage";
 import {
@@ -37,6 +37,7 @@ export const CollectionCardLarge = ({
 
   return (
     <Link
+      legacyBehavior
       href={
         settingsLink
           ? `/collection/${

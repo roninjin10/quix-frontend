@@ -94,7 +94,7 @@ export const ProfileCard = ({ profile }) => {
   }, [current_user]);
 
   return (
-    <Link href={`/${profile_link}`} passHref>
+    <Link legacyBehavior href={`/${profile_link}`} passHref>
       <a>
         <Card>
           <CardContent>

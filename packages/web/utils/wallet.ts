@@ -1,6 +1,5 @@
 // @ts-nocheck
-// @ts-nocheck
-// @ts-nocheck
+"use client";
 import CoinbaseWalletSDK from "@coinbase/wallet-sdk";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import { ethers } from "ethers";
@@ -254,6 +253,9 @@ const setAddress = async (address, dispatch) => {
 
 export const useGetAddress = () => {
   const address = useSelector((state: State) => state.address);
+  if (typeof window === "undefined") {
+    return undefined;
+  }
   if (address) {
     return address;
   } else {

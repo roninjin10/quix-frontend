@@ -88,7 +88,7 @@ export const ProfileLikedTokens = ({
             <NoItems>
               <h1>No items to display</h1>
               {current_user && current_user.address == profileAddress && (
-                <Link href="/explore">
+                <Link legacyBehavior href="/explore">
                   <a>
                     <NoItemsButton>Browse Marketplace</NoItemsButton>
                   </a>

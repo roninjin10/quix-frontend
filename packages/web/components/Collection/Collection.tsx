@@ -21,7 +21,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import ReactMarkdown from "react-markdown";
 import { usePalette } from "react-palette";
 import { useDispatch, useSelector } from "react-redux";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { ModalProvider } from "styled-react-modal";
 import {
   fetchCollectionAttributes,

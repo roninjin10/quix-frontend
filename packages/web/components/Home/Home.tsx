@@ -1,4 +1,5 @@
 // @ts-nocheck
+"use client";
 import { siteConfig } from "../../shared/config";
 import { Explore } from "./Explore/Explore";
 import { FeaturedAssets } from "./FeaturedAssets/FeaturedAssets";

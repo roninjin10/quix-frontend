@@ -14,7 +14,7 @@ import {
 } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { fetchToken, refreshTokenOrders } from "../../api/token";
 import { siteConfig } from "../../shared/config";
 import { State } from "../../store";
@@ -449,7 +449,7 @@ export const Cart = ({ collectionAddress = null }) => {
             ) : (
               <>
                 <Subtitle>No items in cart</Subtitle>
-                <Link href="/explore">
+                <Link legacyBehavior href="/explore">
                   <a>
                     <Button
                       style={{
@@ -512,7 +512,11 @@ const CartRow = ({ token, step, removeFromCart }) => {
   }, [step]);
 
   return (
-    <Link href={`/asset/${token.contract_address}/${token.token_id}`} passHref>
+    <Link
+      legacyBehavior
+      href={`/asset/${token.contract_address}/${token.token_id}`}
+      passHref
+    >
       <a>
         <ItemRow
           onMouseOver={() => setShowRemove(true)}

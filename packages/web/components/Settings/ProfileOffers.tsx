@@ -193,6 +193,7 @@ const Collection = ({
     <EditorRow>
       <CollectionRow>
         <Link
+          legacyBehavior
           href={
             collection.slug
               ? `/collection/${collection.slug}`

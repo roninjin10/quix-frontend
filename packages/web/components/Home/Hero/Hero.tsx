@@ -34,7 +34,7 @@ export const Hero = ({ collection }) => {
                 Discover, collect, and sell digital items <br />
                 on Optimism&apos;s largest NFT marketplace
               </Subtitle>
-              <Link href="/explore">
+              <Link legacyBehavior href="/explore">
                 <a>
                   <Button>Explore NFTs</Button>
                 </a>
@@ -43,6 +43,7 @@ export const Hero = ({ collection }) => {
 
             {collection && collection.image_url && (
               <Link
+                legacyBehavior
                 href={`/collection/${
                   collection.slug ? collection.slug : collection.address
                 }`}

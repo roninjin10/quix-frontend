@@ -10,12 +10,15 @@ export const EndingSoon = ({ tokens }) => {
     <ContainerBackground>
       <ContainerExtended>
         <SectionTitle>
-          <Link href="/explore?tab=1">
+          <Link legacyBehavior href="/explore?tab=1">
             <a>
               <Title>Ending Soon</Title>
             </a>
           </Link>
-          <Link href="/explore?tab=1&sort=expiration_timestamp%3Aasc">
+          <Link
+            legacyBehavior
+            href="/explore?tab=1&sort=expiration_timestamp%3Aasc"
+          >
             <a>
               <Subtitle>
                 View All <MdOutlineArrowForward />

@@ -24,6 +24,7 @@ import {
 export const CollectionCard = ({ collection, settingsLink = false }) => {
   return (
     <Link
+      legacyBehavior
       href={
         settingsLink
           ? `/collection/${

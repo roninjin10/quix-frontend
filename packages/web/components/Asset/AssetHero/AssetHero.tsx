@@ -10,7 +10,7 @@ import { MdVerified } from "react-icons/md";
 import { RiArrowRightDownLine, RiErrorWarningFill } from "react-icons/ri";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { queueRefreshToken, refreshTokenOrders } from "../../../api/token";
 import { siteConfig } from "../../../shared/config";
 import { State } from "../../../store";
@@ -98,6 +98,7 @@ export const AssetHero = ({
         <AssetDetails>
           <TopRowGrid>
             <Link
+              legacyBehavior
               href={
                 token.collection.slug
                   ? `/collection/${token.collection.slug}`
@@ -153,7 +154,11 @@ export const AssetHero = ({
               <AssetOwner>
                 <div>
                   Owned by{" "}
-                  <Link href={`/${token.pending_owner.address}`} passHref>
+                  <Link
+                    legacyBehavior
+                    href={`/${token.pending_owner.address}`}
+                    passHref
+                  >
                     <a>
                       {address === token.pending_owner.address ? (
                         "you (pending)"
@@ -174,6 +179,7 @@ export const AssetHero = ({
                   <div>
                     Owned by{" "}
                     <Link
+                      legacyBehavior
                       href={`/${username ? username : token.owner.address}`}
                       passHref
                     >

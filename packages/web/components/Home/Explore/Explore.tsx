@@ -10,7 +10,7 @@ export const Explore = () => {
   return (
     <ContainerBackground>
       <ContainerExtended>
-        <Link href="/explore">
+        <Link legacyBehavior href="/explore">
           <a>
             <ExploreButton>Explore NFTs</ExploreButton>
           </a>

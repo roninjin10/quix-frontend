@@ -75,15 +75,24 @@ export const AssetDetails = ({ token }) => {
                 <DetailLabel>Contract Owner</DetailLabel>
                 <DetailText>
                   {token.collection.owner.username ? (
-                    <Link href={"/" + token.collection.owner.username}>
+                    <Link
+                      legacyBehavior
+                      href={"/" + token.collection.owner.username}
+                    >
                       <a>{token.collection.owner.username}</a>
                     </Link>
                   ) : token.collection.owner.reverse_ens ? (
-                    <Link href={"/" + token.collection.owner.reverse_ens}>
+                    <Link
+                      legacyBehavior
+                      href={"/" + token.collection.owner.reverse_ens}
+                    >
                       <a>{token.collection.owner.reverse_ens}</a>
                     </Link>
                   ) : (
-                    <Link href={"/" + token.collection.owner.address}>
+                    <Link
+                      legacyBehavior
+                      href={"/" + token.collection.owner.address}
+                    >
                       <a>{token.collection.owner.address.slice(0, 6)}</a>
                     </Link>
                   )}

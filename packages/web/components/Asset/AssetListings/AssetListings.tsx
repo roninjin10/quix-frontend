@@ -111,7 +111,7 @@ const ListingRow = ({
         <TimeAgo date={sell_order.expiration} formatter={offerFormatter} />
       </BuyOrdersText>
       <BuyOrdersText>
-        <Link href={"/" + from_profile}>
+        <Link legacyBehavior href={"/" + from_profile}>
           <a>
             {address === sell_order.seller.address ? (
               "you"

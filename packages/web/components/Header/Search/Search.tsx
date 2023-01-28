@@ -135,6 +135,7 @@ export const Search = ({ isMobile, scrolled }) => {
                       <ResultsGrid>
                         {searchResults.collections.map((result, index) => (
                           <Link
+                            legacyBehavior
                             href={
                               result.slug
                                 ? `/collection/${result.slug}`
@@ -184,6 +185,7 @@ export const Search = ({ isMobile, scrolled }) => {
                       <ResultsGrid>
                         {searchResults.profiles.map((result, index) => (
                           <Link
+                            legacyBehavior
                             href={`/${
                               result.username ||
                               result.reverse_ens ||

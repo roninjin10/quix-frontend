@@ -117,7 +117,7 @@ const OfferRow = ({ address, token, setToken, buy_order, quantityOwned }) => {
         <TimeAgo date={buy_order.expiration} formatter={offerFormatter} />
       </BuyOrdersText>
       <BuyOrdersText>
-        <Link href={"/" + from_profile}>
+        <Link legacyBehavior href={"/" + from_profile}>
           <a>
             {address === buy_order.buyer.address ? (
               "you"

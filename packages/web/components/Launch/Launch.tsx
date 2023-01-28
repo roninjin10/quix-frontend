@@ -51,7 +51,7 @@ export const Launch = ({ collections }) => {
 
             <CarouselContainer>
               <Carousel responsive={responsive} itemClass="carousel-item-class">
-                <Link href="/launch/deploy">
+                <Link legacyBehavior href="/launch/deploy">
                   <a>
                     <Card>
                       <CardImageContainer>

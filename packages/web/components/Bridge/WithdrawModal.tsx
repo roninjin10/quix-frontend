@@ -550,7 +550,10 @@ export const WithdrawModal = ({
                 </ModalGridRow>
 
                 <ButtonGrid className="offer">
-                  <Link href={`/asset/eth/${l1Address}/${tokenId}`}>
+                  <Link
+                    legacyBehavior
+                    href={`/asset/eth/${l1Address}/${tokenId}`}
+                  >
                     <a>
                       <Button>View NFT</Button>
                     </a>

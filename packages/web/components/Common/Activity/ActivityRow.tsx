@@ -68,6 +68,7 @@ export const ActivityRow = ({ event }) => {
 
   return (
     <Link
+      legacyBehavior
       href={`/asset/${event.token.network != siteConfig.NETWORK ? "eth/" : ""}${
         event.token.contract_address
       }/${event.token.token_id}`}
@@ -110,6 +111,7 @@ export const ActivityRow = ({ event }) => {
               <ActivityText>
                 <CollectionName>
                   <Link
+                    legacyBehavior
                     href={
                       event.token.collection.slug
                         ? `/collection/${event.token.collection.slug}`
@@ -269,7 +271,7 @@ export const ActivityRow = ({ event }) => {
               <ActivityInfo className="title mobile">From</ActivityInfo>
               <ActivityInfo className="profile">
                 {from_profile ? (
-                  <Link href={"/" + from_profile}>
+                  <Link legacyBehavior href={"/" + from_profile}>
                     <a>
                       <ProfileGrid>
                         <ProfileIcon>
@@ -289,7 +291,7 @@ export const ActivityRow = ({ event }) => {
               <ActivityInfo className="title mobile">To</ActivityInfo>
               <ActivityInfo>
                 {to_profile ? (
-                  <Link href={"/" + to_profile}>
+                  <Link legacyBehavior href={"/" + to_profile}>
                     <a>
                       <ProfileGrid>
                         <ProfileIcon>

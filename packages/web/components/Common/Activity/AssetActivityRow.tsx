@@ -242,7 +242,7 @@ export const AssetActivityRow = ({ token, event }) => {
           <ActivityInfo className="title mobile">From</ActivityInfo>
           <ActivityInfo>
             {from_profile ? (
-              <Link href={"/" + from_profile}>
+              <Link legacyBehavior href={"/" + from_profile}>
                 <a>
                   <ProfileGrid>
                     <ProfileIcon>
@@ -262,7 +262,7 @@ export const AssetActivityRow = ({ token, event }) => {
           <ActivityInfo className="title mobile">To</ActivityInfo>
           <ActivityInfo>
             {to_profile ? (
-              <Link href={"/" + to_profile}>
+              <Link legacyBehavior href={"/" + to_profile}>
                 <a>
                   <ProfileGrid>
                     <ProfileIcon>

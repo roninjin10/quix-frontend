@@ -2,7 +2,7 @@
 import "@google/model-viewer";
 import { FaEthereum } from "react-icons/fa";
 import { TbBuildingBridge } from "react-icons/tb";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { siteConfig } from "../../../shared/config";
 import { TokenMedia } from "../../Common/Images/TokenImage";
 import { AssetMediaModal } from "./AssetMediaModal";
