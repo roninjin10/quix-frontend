@@ -1,0 +1,47 @@
+{
+  "defaultBase": "main",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "test:coverage"],
+        "accessToken": "NWMxN2ZlYzUtNDRmMi00OTk1LTg2YmMtNDU5OTAwYWFlNWRjfHJlYWQ="
+      }
+    }
+  },
+  "targetDefaults": {
+    "test": {
+      "dependsOn": ["^build", "nx:pretest"]
+    },
+    "test:watch": {
+      "dependsOn": ["^build"]
+    },
+    "test:coverage": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/coverage"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build"]
+    },
+    "serve": {
+      "dependsOn": ["build"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "dev": {
+      "dependsOn": ["^build"]
+    },
+    "start:devnet": {}
+  }
+}
