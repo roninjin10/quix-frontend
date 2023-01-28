@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nrwl/nx-cloud": "latest",
     "nx": "^15.6.3"
   }
 }
